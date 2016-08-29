@@ -13,13 +13,13 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  gem.name = "codeigniter-scaffold"
-  gem.homepage = "http://github.com/zekitow/codeigniter-scaffold"
+  gem.name = "codeigniter3-scaffold"
+  gem.homepage = "http://github.com/universidadecodeigniter/codeigniter-scaffold"
   gem.license = "MIT"
-  gem.summary = "Simple gem for generate scaffolds for codeigniter" 
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "zekitow@gmail.com"
-  gem.authors = ["jribeiro"]
+  gem.summary = "Simple gem for generate scaffolds for codeigniter 3"
+  gem.description = "Simple gem for generate scaffolds for codeigniter 3"
+  gem.email = "contato@universidadecodeigniter.com.br"
+  gem.authors = ["jlamim","universidadecodeigniter"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
@@ -38,7 +38,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "codeigniter-scaffold #{version}"
+  rdoc.title = "codeigniter3-scaffold #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

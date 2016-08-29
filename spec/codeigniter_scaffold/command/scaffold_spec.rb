@@ -8,7 +8,7 @@ describe CodeigniterScaffold::Command::Scaffold do
   end
 
   after(:all) do
-    unziped = ["application","index.php","system","user_guide"]
+    unziped = ["application","index.php","system"]
     unziped.each { |f| FileUtils.rm_rf Dir.glob(f) }
   end
 

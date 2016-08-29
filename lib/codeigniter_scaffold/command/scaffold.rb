@@ -12,8 +12,8 @@ module CodeigniterScaffold
           return Kernel.puts(ARGS_ARE_NEEDED) unless valid?(args)
           parse(args)
 
-          create("controller.php","application/controllers/#{@model.downcase}.php")
-          create("model.php","application/models/#{@model.downcase}_model.php")
+          create("controller.php","application/controllers/#{@model.capitalize}.php")
+          create("model.php","application/models/#{@model.capitalize}_model.php")
           create("migration.sql","application/migrations/create_#{@model.downcase}.sql")
           mkdir ("application/views/#{@model.downcase}")
           create("view_create.php","application/views/#{@model.downcase}/create.php")

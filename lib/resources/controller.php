@@ -5,14 +5,14 @@
  */
 class <%=@model.capitalize%> extends CI_Controller {
 
-	function __construct() { 
+	function __construct() {
 		parent::__construct();
-		$this->load->model('<%=@model.downcase%>_model');
+		$this->load->model('<%=@model.capitalize%>_model');
 	}
 
 	# GET /<%=@model.downcase%>
 	function index() {
-		$data['<%=@model.downcase%>'] = $this-><%=@model.downcase%>_model->find();
+		$data['<%=@model.downcase%>'] = $this-><%=@model.capitalize%>_model->find();
 		$data['content'] = '/<%=@model.downcase%>/index';
 		$this->load->view('/includes/template', $data);
 	}
@@ -26,7 +26,7 @@ class <%=@model.capitalize%> extends CI_Controller {
 	# GET /<%=@model.downcase%>/edit/1
 	function edit() {
 		$id = $this->uri->segment(3);
-		$data['<%=@model.downcase%>'] = $this-><%=@model.downcase%>_model->find($id);
+		$data['<%=@model.downcase%>'] = $this-><%=@model.capitalize%>_model->find($id);
 		$data['content'] = '/<%=@model.downcase%>/create';
 		$this->load->view('/includes/template', $data);
 	}
@@ -34,7 +34,7 @@ class <%=@model.capitalize%> extends CI_Controller {
 	# GET /<%=@model.downcase%>/destroy/1
 	function destroy() {
 		$id = $this->uri->segment(3);
-		$data['<%=@model.downcase%>'] = $this-><%=@model.downcase%>_model->destroy($id);
+		$data['<%=@model.downcase%>'] = $this-><%=@model.capitalize%>_model->destroy($id);
 		redirect('/<%=@model.downcase%>/index', 'refresh');
 	}
 
@@ -48,7 +48,7 @@ class <%=@model.capitalize%> extends CI_Controller {
 			$data[] = array();
 			$data['id'] = $this->input->post('id', TRUE);<% @attributes.each { |f| %>
 			$data['<%= f.name %>'] = $this->input->post('<%= f.name %>', TRUE);<% } %>
-			$this-><%=@model.downcase%>_model->save($data);
+			$this-><%=@model.capitalize%>_model->save($data);
 			redirect('/<%=@model.downcase%>/index', 'refresh');
 		}
 		$data['<%=@model.downcase%>'] =	$this->rebuild();
@@ -57,7 +57,7 @@ class <%=@model.capitalize%> extends CI_Controller {
 	}
 
 	function rebuild() {
-		$object = new <%=@model.downcase%>_model();
+		$object = new <%=@model.capitalize%>_model();
 		$object->id = $this->input->post('id', TRUE);<% @attributes.each { |f| %>
 		$object-><%= f.name %> = $this->input->post('<%= f.name %>', TRUE);<% } %>
 		return $object;
@@ -65,4 +65,3 @@ class <%=@model.capitalize%> extends CI_Controller {
 }
 
 ?>
-
