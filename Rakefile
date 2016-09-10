@@ -17,9 +17,10 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/universidadecodeigniter/codeigniter-scaffold"
   gem.license = "MIT"
   gem.summary = "Simple gem for generate scaffolds for codeigniter 3"
-  gem.description = "Simple gem for generate scaffolds for codeigniter 3"
+  gem.description = "Simple scaffold generator for codeigniter 3.1.0 now using Twitter Bootstrap templates!"
   gem.email = "contato@universidadecodeigniter.com.br"
   gem.authors = ["jlamim","universidadecodeigniter"]
+  gem.executables = ["codeigniter3-scaffold"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
