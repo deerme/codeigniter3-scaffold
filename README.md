@@ -1,6 +1,6 @@
 # CodeIgniter 3 Scaffold
 
-Simple scaffold generator for codeigniter 3.1.0 now using Twitter Bootstrap templates!
+Simple scaffold generator for CodeIgniter 3.1.0 now using Twitter Bootstrap templates!
 
 ## Instalation
 
@@ -17,9 +17,8 @@ gem install codeigniter3-scaffold
 
     codeigniter3-scaffold [options...]
       -h, --help show this help
-      -i, --init unzip a codeigniter 3.1.0 installation in the current dir
+      -i, --init unzip a CodeIgniter 3.1.0 installation in the current dir
       -s, --scaffold <model-name> field1:string field2:text field3:integer, and so on..
-
 
 ## Pre-setup
 
@@ -30,10 +29,8 @@ gem install codeigniter3-scaffold
 * After running 'codeigniter3-scaffold --scaffold [options...]'
   * Go to 'application/migrations' and run the generated script into your database;
 
-
 * Have fun =)
-
 
 ## Copyright
 
-Copyright (c) 2016 universidadecodeigniter.
+Copyright (c) 2016 Universidade CodeIgniter & JLamim.
