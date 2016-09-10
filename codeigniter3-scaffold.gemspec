@@ -29,7 +29,7 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
-    "codeigniter3-scaffold-1.0.0.gem",
+    "bin/codeigniter3-scaffold",
     "codeigniter3-scaffold.gemspec",
     "lib/codeigniter_scaffold.rb",
     "lib/codeigniter_scaffold/attribute.rb",
@@ -47,9 +47,7 @@ Gem::Specification.new do |s|
     "spec/codeigniter_scaffold/command/init_spec.rb",
     "spec/codeigniter_scaffold/command/scaffold_spec.rb",
     "spec/codeigniter_scaffold/executor_spec.rb",
-    "spec/spec_helper.rb",
-    "ss/create.png",
-    "ss/list.png"
+    "spec/spec_helper.rb"
   ]
   s.homepage = "http://github.com/universidadecodeigniter/codeigniter-scaffold"
   s.licenses = ["MIT"]
